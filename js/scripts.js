@@ -184,7 +184,6 @@ function transicion_abrir(ev)
 	ev.preventDefault();
 	var abrir = 
 	{
-		fontSize: 18,
 		height: 'auto',
 		opacity: 1,
 		visibility: 'visible'
@@ -201,7 +200,6 @@ function transicion_abrir(ev)
 		ev.preventDefault();
 		var cerrar =
 		{
-			fontSize: 0,
 			height: 0,
 			opacity: 0,
 			visibility: 'hidden'

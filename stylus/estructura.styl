@@ -30,13 +30,16 @@ a
 	&:hover
 	&:focus
 		color rojo_google
+
 		
 footer
 	a
 		text-decoration none
 
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family "Fjord"
+
 
 header
 	background: #c9a55c;
@@ -50,12 +53,15 @@ header
 	border-radius(4px)
 	box-shadow_lindo()
 	overflow hidden
+	position relative
 	text-align left
 	transition(all 0.5s ease-in-out)
+
 
 nav
 	position relative
 	
+
 textarea
 	border 1px solid gris_claro
 	border-radius (5px)
@@ -74,15 +80,12 @@ textarea
 
 /* Los id's */
 #activador
-	background rojo_ladrillo
-	border 1px dashed blanco_grisaceo
-	border-right none
-	border-radius(5px 0 0 5px)
-	box-shadow( 0px 0px 1px 5px rojo_google unquote(",") 0px 1px 1px 0px rgba(255,255,255,0.5) inset unquote(",") 0px -15px 15px 0px rgba(0,0,0,0.25) inset )
-	display block
-	position fixed
-	right 0
-	bottom 0.5em
+	background url('../img/sticker.png') no-repeat center center
+	background-size(100% auto)
+	display inline-block
+	left 3em
+	position absolute
+	top 0.1em
 	transition(all 0.5s ease-in-out)
 	transform(translateX(10px))
 	z-index 1234
@@ -90,10 +93,11 @@ textarea
 	a
 		display inline-block
 		color blanco_grisaceo
-		font-size 2em
-		padding 0.1em 0.3em
+		font-size 1.9em
+		padding 0.4em 0.3em 0.4em 0.6em
 		text-decoration none
 		text-shadow_lindo()
+		text-align center
 		transition(all 0.5s ease-in-out)
 		
 		span
@@ -103,8 +107,7 @@ textarea
 			transition(all 0.5s ease-in-out)
 			vertical-align 35%
 			
-		&:hover
-		&:focus
+		&:hover, &:focus
 			span
 				font-size 0.5em
 				opacity 1
@@ -119,21 +122,18 @@ textarea
 			display inline-block
 	
 		
-		
 #header_nav
-	font-size 0
 	height 0
 	opacity 0
 	visibility hidden
 	transition(all 0.3s ease-in-out)
 	text-align left
 	width 100%
+	z-index 3
 	
 	ul
-		border-bottom 1px solid negro_transparente
 		margin 0
-		padding 0
-		
+		padding 0		
 
 		li
 			list-style none
@@ -146,6 +146,7 @@ textarea
 				text-transform uppercase
 				text-shadow_lindo()
 				text-decoration none
+				z-index 999 !important
 			
 			a:hover, a:focus
 				background rgba(0,0,0,0.3)
@@ -199,8 +200,7 @@ textarea
 			&:focus
 				box-shadow(none)
 				width 200px*/
-			
-			
+							
 		
 #menu
 	background transparent !important
@@ -234,7 +234,7 @@ textarea
 	bottom 0.2em
 	display inline-block
 	font-size 40px
-	left 0.2em
+	right 0.2em
 	padding 0
 	position fixed
 	text-decoration none
@@ -245,25 +245,28 @@ textarea
 		padding 0
 		margin -0.2em 0.3em 0.1em 0.3em
 
+
 #ir_arriba
 	background rgba(232, 100, 90, 0.2)
 	border-radius(5px)
 	opacity 0
 	visibility hidden
 
+
 #ir_arriba:focus
 #ir_arriba_phone:focus
 	background rgba(232, 100, 90, 0.7)
+
 
 #ir_arriba:hover
 #ir_arriba_phone:hover
 	background rgba(232, 100, 90, 1)
 	box-shadow_lindo()
 
+
 #logo
 	display inline-block
 	margin auto auto auto 0
-	
 	
 	figure
 		padding 0
@@ -298,8 +301,7 @@ textarea
 			border-radius(5px 5px 0 0)
 			width 100%
 			
-		&:before
-		&:after
+		&:after, &:before
 			box-shadow(0px 0px 6px 4px negro)
 			bottom 5px
 			content ""
@@ -325,10 +327,10 @@ textarea
 /* las clases */
 .clearfix
 	clear both
-	
+
+
 .contenido
-	p
-	ul
+	p, ul
 		text-align left
 
 	ul
@@ -336,12 +338,10 @@ textarea
 		padding-left 1em
 
 	
-.contenido
-.formulario
-.galeria
-.tarifas
+.contenido, .formulario, .galeria, .tarifas
 	overflow hidden
 	padding 0.5em
+
 
 .creditos
 	border-top 1px solid blanco
@@ -351,6 +351,7 @@ textarea
 	ul
 		li
 			display inline-block
+
 
 .galeria_2
 	display inline-block
@@ -369,10 +370,8 @@ textarea
 		margin 0
 		padding 4px 4px 0 4px
 		position relative
-
-		
-		&:before
-		&:after
+	
+		&:after, &:before
 			box-shadow(0px 0px 6px 4px negro)
 			bottom 5px
 			content ""
@@ -406,9 +405,7 @@ textarea
 			max-width 200px
 			padding 0
 			transition(all ease-in-out 0.3s)
-			
-			
-			
+
 			figcaption
 				display none
 			
@@ -416,11 +413,11 @@ textarea
 				margin 0
 				padding 0
 				width 100%
-		
-		
+					
 
 .header_address
 	display none
+
 
 .header_tittle	
 	h1, h2
@@ -438,8 +435,10 @@ textarea
 			margin-left 5px
 			padding-left 5px
 			
+
 .header_title_inside
 	display none
+
 
 .imagen_item
 	background #fff
@@ -451,25 +450,20 @@ textarea
 	margin 1em 0
 	transition(all 0.3s ease-in-out)
 	
-	&:hover
-	&:focus
+	&:hover, &:focus
 		background gris_nube
 		box-shadow_lindo()
 		figcaption
-			text-shadow(0px 0px 1px #fff)
-		
+			text-shadow(0px 0px 1px #fff)	
 	img
 		position relative
 		width 100%
 		
-	
 	figcaption
 		padding 0.5em
-		
-	
+			
 	a
-		&:before
-		&:after
+		&:before, &:after
 			box-shadow(0px 0px 6px 4px negro)
 			bottom 5px
 			content ""
@@ -493,6 +487,7 @@ textarea
 	color gris_texto
 	border none
 	box-sizing()
+	box-shadow(none)
 	display table-cell
 	margin 0
 	padding 0.5em
@@ -505,6 +500,7 @@ textarea
 	&:focus
 		outline none
 		color azul_twitter
+
 
 .input-group
 	border 1px solid gris_claro
@@ -524,6 +520,7 @@ textarea
 		border 1px solid azul_twitter
 		box-shadow( 0px 1px 1px rgba(0, 0, 0, 0.075) inset unquote(",") 0px 0px 8px rgba(102, 175, 233, 0.6))
 		outline 0 none
+
 		
 .input-group-addon
 	background gris_claro
@@ -534,7 +531,8 @@ textarea
 	width 1%
 	min-width 40px
 	white-space nowrap
-			
+
+	
 .logo_brochero
 	background url('../img/logo-cura-brochero.png') no-repeat top left
 	background-size(152px auto)
@@ -543,8 +541,10 @@ textarea
 	margin-left 1em
 	width 152px
 
+
 .perspectiva
 	perspective(600px)
+
 
 .redessociales
 	border-bottom 1px solid gris_concreto
@@ -553,7 +553,8 @@ textarea
 		font-size 23px
 		padding 0.3em 0.5em
 		text-shadow_lindo()
-		
+
+	
 .table
 	font-size 15px
 
@@ -575,27 +576,24 @@ textarea
 			border-left none
 		
 		th[colspan="4"]
-			border-bottom 1px solid blanco_normal
-			
+			border-bottom 1px solid blanco_normal		
 			
 	tbody
 		tr
 			td
 				padding 0.5em
 				border 1px solid gris_concreto
-			
 		
 			&:nth-child(even)
 				background gris_claro
 				
 			&:hover
 				background gris_nube
-				
-				/*-31.707110,-65.007630*/
 					
 			td[colspan="4"]
 				text-align left
-				
+
+			
 .titular_estilo_mesa
 	background: #fff;
 	background: -moz-linear-gradient(top, #ffffff 30%, #eeeeee 100%);
@@ -630,13 +628,16 @@ textarea
 	
 	&:before
 		left 23px
-				
+	
+
 @media only screen and (min-width: 420px)
 	.galeria_2
 		figure
 			width 200px
+
 	.table
 		font-size 18px
+
 
 @media only screen and (min-width: 720px)
 	.columna-2
@@ -644,9 +645,11 @@ textarea
 		column-gap(1em)
 		column-rule(2px inset gris_claro)
 	
+
 	.galeria
 		padding 1em
 		
+
 	.galeria_2
 		div
 			column-count(3)
@@ -656,19 +659,24 @@ textarea
 				max-width 300px
 			
 		
-	.formulario
-	.tarifas
+	.formulario, .tarifas
 		display inline-block
 		width 45%
 		vertical-align top
 	
+
 	.formulario
 		margin-right 1em
-		
+
+	
 	.imagen_item
 		display inline-block
 		margin 0.5em
 		max-width 250px
+		
+	.tarifas
+		.table
+			margin-top 0.5em
 
 
 @media only screen and (min-width: 1100px)
@@ -693,13 +701,21 @@ textarea
 		overflow hidden
 		transition(all 0.5s ease-in-out)
 		
+	
 	section
 		margin-top 8em
 		
+
+	#activador
+		left 10em
+		height 120px
+		top 1em
+		width 150px
+		transform(rotate(-12deg))
+		
+	
 	#header_nav
 		border-bottom none
-		display block
-		font-size 1em
 		height auto
 		opacity 1
 		visibility visible
@@ -722,12 +738,11 @@ textarea
 		margin 0 0.5em 0 0
 		padding 0
 		vertical-align top
-		transition(all 0.5s ease-in-out)*/
-
-		
+		transition(all 0.5s ease-in-out)*/	
 		.input-group
 			margin 0.3em 0 0 0
 			
+	
 	#logo
 		display inline-block
 		margin-top 0em
@@ -749,6 +764,7 @@ textarea
 					padding 0
 					width 150px
 						
+	
 	#menu
 		display none
 		
@@ -772,8 +788,10 @@ textarea
 				img
 					width 152px
 		
+	
 	.header_tittle
 		display none
+	
 	
 	.header_title_inside
 		display inline-block

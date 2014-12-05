@@ -80,22 +80,48 @@ textarea
 /* Los id's */
 #activador
 	display inline-block
+	bottom 8px
 	left 4em
+	margin 0
+	padding 0
 	position absolute
-	top -32px
 	
 	a
+		background rojo_ladrillo
+		border-radius(4px)
+		border 1px dashed blanco_grisaceo
+		box-shadow( 0px 0px 0px 5px rojo_google unquote(",") 0px 1px 1px 0px rgba(255,255,255,0.5) inset unquote(",") 0px -15px 15px 0px rgba(0,0,0,0.25) inset )
+		color #fff
 		display inline-block
-		padding 0.4em 0.3em 0.4em 0.6em
-		transition(all 0.5s ease-in-out)
+		padding 3px 6px
+		text-decoration none
+		text-shadow_lindo()
+		transition(all 0.3s ease-in-out)
 		
-		img
-			animation agrandador 3.5s ease-in-out infinite alternate
-			-o-animation agrandador 3.5s ease-in-out infinite alternate
-			-ms-animation agrandador 3.5s ease-in-out infinite alternate
-			-moz-animation agrandador 3.5s ease-in-out infinite alternate
-			-webkit-animation agrandador 3.5s ease-in-out infinite alternate
-			width 100px
+		
+		h3
+			display inline-block
+			font-size 0
+			font-weight lighter
+			margin 0
+			padding 0
+			transition(all 0.3s ease-in-out)
+			
+			i
+				animation agrandador 3.5s ease-in-out infinite alternate
+				-o-animation agrandador 3.5s ease-in-out infinite alternate
+				-ms-animation agrandador 3.5s ease-in-out infinite alternate
+				-moz-animation agrandador 3.5s ease-in-out infinite alternate
+				-webkit-animation agrandador 3.5s ease-in-out infinite alternate
+				display inline-block
+				font-size 25px
+				
+	&:hover, &:focus
+		h3
+			font-size 16px
+			i
+				margin-right 9px
+		
 
 		
 #header_nav
@@ -618,9 +644,10 @@ textarea
 	header
 		overflow hidden
 		position fixed
+		text-align left
 		top 0
+		left 0
 		width 100%
-		text-align center
 		z-index 321
 		
 		.header_tittle
@@ -630,9 +657,9 @@ textarea
 				display block
 		
 	nav
-		display block
+		display inline-block
 		float none
-		margin 0.4em
+		margin 0.4em 0.4em 0 10em
 		overflow hidden
 		transition(all 0.5s ease-in-out)
 		
@@ -642,22 +669,18 @@ textarea
 		
 
 	#activador
-		left 9em
-		top 0
-		a
-			border-radius(50%)
-			display block
-			z-index 321
-			img
-				display block
-				width 130px
+		display inline-block
+		bottom auto
+		left auto
+		right 0.5em
+		top 0.5em
 		
 	
 	#header_nav
+		display inline-block
 		height auto
 		opacity 1
 		visibility visible
-		text-align right
 		transition(all 0.5s ease-in-out)			
 			
 		li
@@ -670,7 +693,7 @@ textarea
 		padding 0
 		position absolute
 		left 1em
-		top 1em
+		top 0.5em
 		transition(all 0.5s ease-in-out)
 		
 		figure
@@ -678,6 +701,8 @@ textarea
 			padding 0
 			a
 				display block
+				margin 0
+				padding 0
 				
 				img
 					box-shadow(0px 0px 5px negro_transparente)
@@ -693,12 +718,14 @@ textarea
 		
 		
 	.header_address
+		//bottom 0.5em
 		color blanco_grisaceo
 		display inline-block
 		font-family 'Fjord'
-		position absolute
-		right 0.5em
-		bottom 0.5em
+		
+		//right 0.5em
+		float right
+		margin-right 0.5em
 		text-align right
 		
 		ul
@@ -718,7 +745,7 @@ textarea
 	
 	.header_title_inside
 		display inline-block
-		margin 0 auto
+		margin 0 auto 0 10em
 		transition(all 0.5s ease-in-out)
 		width auto
 		

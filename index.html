@@ -37,7 +37,7 @@
 	<![endif]-->
 	<!--[if gte IE 9]><style type="text/css">.gradient{filter:none !important;}</style><![endif]-->
 </head>
-<body class="gradient">
+<body>
 	<div class="header_tittle">
 		<h1>
 			Hostería Arture
@@ -53,29 +53,20 @@
 				</a>
 			</figure>
 		</div>
-		<button id="menu">
+		<button id="menu" class="gradient">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 		<nav>
-			<div id="header_nav">
-				<ul>
-					<li class="active current_menu_item current-page-item"><a href="index.html">Inicio</a></li>
-					<li><a href="contacto.html">Contacto y Tarifas</a></li>
-					<li><a href="fotos.html">Fotos</a></li>
-					<li><a href="traslasierra.html">Traslasierra</a></li>
-					<li><a href="servicios.html">Servicios</a></li>
-					<li><a href="desubicacion.html">Desubicación</a></li>
-				</ul>
-
-				<form id="header_search">
-					<div class="input-group">
-						<input id="chusmear" name="chusmear" type="search" value="Buscar..." />
-						<button class="yellow"><i class="icon-search"></i></button>
-					</div>
-				</form>
-			</div>
+			<ul id="header_nav">
+				<li class="active current_menu_item current-page-item"><a href="index.html">Inicio</a></li>
+				<li><a href="contacto.html">Contacto y Tarifas</a></li>
+				<li><a href="fotos.html">Fotos</a></li>
+				<li><a href="traslasierra.html">Traslasierra</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="desubicacion.html">Desubicación</a></li>
+			</ul>
 		</nav>
 		<div class="header_title_inside">
 			<h1>
@@ -88,8 +79,9 @@
 
 		<div id="promo">
 			<h3>
-				<i class="icon-gift"> </i>Promoción día de la madrastra
+				Promoción día de la madrastra
 			</h3>
+			<div class="clearfix"></div>
 			<figure>
 				<img alt="promoción" src="img/1.jpg" />
 				<figcaption>
@@ -105,13 +97,12 @@
 			</ul>
 		</div>
 		<div class="clearfix"></div>
+		<div id="activador">
+			<a class="fancybox" href="#promo">
+				<img title="Promoción" alt="Promoción" src="img/sticker3.png" />
+			</a>
+		</div>
 	</header>
-	<div id="activador">
-		<a class="fancybox" href="#promo">
-			<i class="icon-gift"> </i>
-			<span>Promoción día del alienígena</span>
-		</a>
-	</div>
 	<section>
 		<article id="highlight">
 			<img src="img/1.jpg" />
@@ -148,11 +139,13 @@
 				</a>
 			</div>
 
-			<div class="logo_brochero">
-				
-			</div>
 
 			<div class="creditos">
+				<div class="logo_brochero">
+					<figure>
+						<img src="img/logo-cura-brochero.png" alt="Cura Brochero" />
+					</figure>
+				</div>
 				<p>
 					Desarrollado por <a href="http://www.webmoderna.com.ar" target="_blank">WebModerna</a>
 				</p>
@@ -162,6 +155,7 @@
 			<img width="32" height="32" title="Ir arriba" alt="ir arriba" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAACPUlEQVR42mL8//8/w0ACgABiYhhgABBAA+4AgAAacAcABNCAOwAggAbcAQABNOAOAAigAXcAQACR7YAsIZ4aIK6k1AEAAcREpuW1QKoZiNsodQRAADGRYXkDkGpCEmqDOogsABBAjKQUxUCLWoFUFQ7p5mnvvtSR6gCAACLKAUCLGYFUOxCXE1DaBnRENSkOAAgggg4AWg6Kpm4gLiLSTJDacqBDiApagADC6wCg5cxAqh+Ic7FI/8OTjiYAcTHQEf8IOQAggJjwWM4CpCbjsPwyEIcCcSQQX8MiXwDEE6EewAsAAghrCAA1sgGpqUCcgib1CIh7gXgu0HdfoWp5gVQa1FIZNPUzQR4Aqv2NywEAAYThAKCB7EBqOhAnIgm/h4pNBBr2CkeIiYOCHeoYfiSpOUCcDdT3C5s+gABCcQDQEE4gNQuIY6BCIE0LgbgTaMBdIrOqGpCqgJrBChUGmZEBNOMHunqAAII7AKiRC0jNA+JwIAYJbobm7TNklpbmQApULniC7AHiZaAoBZr3HVkdQACBHQBUzANV4AvEx0ElHVDhDmpUNkCzvYFUPRCbAvEGUMjA0g8IAAQQY6YgtzCQXg3E6kAMKteX40s0ZDqCDRoloMLsIhBHAO14B5IDCCCQAxZBUzconj/TsuoFOoQfmj4kQUU60L5nAAHEAHSANiga6ImBduoCsRuIDRBAjAPdLwAIoAFvEQEE0IA7ACCABtwBAAE04A4ACKABdwBAAA24AwACaMAdABBgAJVW9XmhEin3AAAAAElFTkSuQmCC" />
 		</a>
 	</footer>
+	<script type="text/javascript" src="js/slideshow.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

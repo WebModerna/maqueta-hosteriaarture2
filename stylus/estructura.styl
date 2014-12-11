@@ -18,7 +18,8 @@ body
 	background linear-gradient(to bottom, rgba(255,255,255,1) 49%,rgba(207,209,198,1) 100%)
 	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfd1c6',GradientType=0 )")
 	color #555
-	font-family "roboto_condensedregular"
+	font-family 'DosisRegular'
+	font-weight normal
 	font-size 18px
 	text-align center
 
@@ -37,20 +38,22 @@ footer
 		text-decoration none
 
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
-	font-family "Fjord"
+footer, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-family 'DroidSerifRegular', sans-serif
 
 
 header
-	background: #c9a55c;
-	background: -moz-linear-gradient(top, #c9a55c 0%, #9a7e46 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9a55c), color-stop(100%,#9a7e46));
-	background: -webkit-linear-gradient(top, #c9a55c 0%,#9a7e46 100%);
-	background: -o-linear-gradient(top, #c9a55c 0%,#9a7e46 100%);
-	background: -ms-linear-gradient(top, #c9a55c 0%,#9a7e46 100%);
-	background: linear-gradient(to bottom, #c9a55c 0%,#9a7e46 100%);
+	background-color #c9a55c
+	background-image url('../img/textura.png')
+	background-color -moz-linear-gradient(top, #c9a55c 0%, #9a7e46 100%) 
+	background-color -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9a55c), color-stop(100%,#9a7e46))
+	background-color -webkit-linear-gradient(top, #c9a55c 0%,#9a7e46 100%)
+	background-color -o-linear-gradient(top, #c9a55c 0%,#9a7e46 100%)
+	background-color -ms-linear-gradient(top, #c9a55c 0%,#9a7e46 100%)
+	background-color linear-gradient(to bottom, #c9a55c 0%,#9a7e46 100%)
 	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9a55c', endColorstr='#9a7e46',GradientType=0 )")
-	border-radius(4px)
+	border-radius(4px 4px 0 0)
+	/*box-shadow(inset 0 0 80px 15px negro_re_transparente)*/
 	box-shadow_lindo()
 	height auto
 	position relative
@@ -78,52 +81,6 @@ textarea
 		box-shadow( 0px 1px 1px rgba(0, 0, 0, 0.075) inset unquote(",") 0px 0px 8px rgba(102, 175, 233, 0.6))
 
 /* Los id's */
-#activador
-	display inline-block
-	top 12px
-	left 4em
-	margin 0
-	padding 0
-	position absolute
-	
-	a
-		background rojo_ladrillo
-		border-radius(4px)
-		border 1px dashed blanco_grisaceo
-		box-shadow( 0px 0px 0px 5px rojo_google unquote(",") 0px 1px 1px 0px rgba(255,255,255,0.5) inset unquote(",") 0px -15px 15px 0px rgba(0,0,0,0.25) inset )
-		color #fff
-		display inline-block
-		padding 3px 6px
-		text-decoration none
-		text-shadow_lindo()
-		transition(all 0.3s ease-in-out)
-		
-		
-		h3
-			display inline-block
-			font-size 0
-			font-weight lighter
-			margin 0
-			padding 0
-			transition(all 0.3s ease-in-out)
-			
-			i
-				animation agrandador 3.5s ease-in-out infinite alternate
-				-o-animation agrandador 3.5s ease-in-out infinite alternate
-				-ms-animation agrandador 3.5s ease-in-out infinite alternate
-				-moz-animation agrandador 3.5s ease-in-out infinite alternate
-				-webkit-animation agrandador 3.5s ease-in-out infinite alternate
-				display inline-block
-				font-size 25px
-				
-	&:hover, &:focus
-		h3
-			font-size 16px
-			i
-				margin-right 9px
-		
-
-		
 #header_nav
 	height 0
 	margin 0
@@ -230,62 +187,11 @@ textarea
 				border-radius(5px)
 				width 50px
 
-#promo
-	background url('../img/sticker3.png') no-repeat top left
-	background-size(150px auto)
-	display none
-	padding 0 1em 1em 1em
-	
-	h3
-		color marron_claro
-		font-size 1.3em
-		width 70%
-		float right
-	
-	figure
-		border-radius(5px)
-		border 1px solid gris_claro
-		margin 2em auto 1em auto
-		max-width 380px
-		position relative
-		z-index 1
-		
-		figcaption
-			border-radius( 0 0 5px 5px)
-			background blanco_normal
-			color rojo_ladrillo
-			padding 0.5em 1em 1em 1em
-		
-		img
-			border-radius(5px 5px 0 0)
-			width 100%
-			
-		&:after, &:before
-			box-shadow(0px 0px 6px 4px negro)
-			bottom 5px
-			content ""
-			display block
-			height 0
-			position absolute
-			width 43%
-			
-		&:after
-			left 0.5em
-			transform( rotate(-5deg) )
-			z-index -1
-		
-		&:before
-			right 0.5em
-			transform( rotate(5deg) )
-			z-index -1
-			
-	.fancybox-title-inside-wrap
-		display none !important
 
-
-/* las clases */
+/* las clases =========================*/
 .clearfix
 	clear both
+
 
 .center
 	text-align center
@@ -433,56 +339,6 @@ textarea
 			transform( rotate(5deg) )
 			z-index -1
 
-
-.input
-	color gris_texto
-	border none
-	box-sizing()
-	box-shadow(none)
-	display table
-	margin 0
-	padding 0.5em
-	position relative
-	width 95%
-	transition(all 0.3s ease-in-out)
-	z-index 2
-	
-	&:hover
-	&:focus
-		outline none
-		color azul_twitter
-
-
-.input-group
-	border 1px solid gris_claro
-	border-collapse separate
-	box-sizing()
-	border-radius(5px)
-	display table
-	margin 0.5em auto
-	overflow hidden
-	padding 0
-	transition(all 0.3s ease-in-out)
-
-	&:hover
-	&:focus
-		color azul_twitter
-		box-sizing()
-		border 1px solid azul_twitter
-		box-shadow( 0px 1px 1px rgba(0, 0, 0, 0.075) inset unquote(",") 0px 0px 8px rgba(102, 175, 233, 0.6))
-		outline 0 none
-
-		
-.input-group-addon
-	background gris_claro
-	display table-cell
-	padding 0 0.3em
-	text-align center
-	vertical-align middle
-	width 1%
-	min-width 40px
-	white-space nowrap
-
 	
 .logo_brochero
 	overflow hidden
@@ -506,45 +362,6 @@ textarea
 		font-size 23px
 		padding 0.3em 0.5em
 		text-shadow_lindo()
-
-	
-.table
-	font-size 13px
-
-	thead
-		border-left 1px solid gris_concreto
-		border-right 1px solid gris_concreto
-		font-family 'fjord'
-		font-weight lighter
-
-		th
-			background gris_concreto
-			border-left 1px solid blanco_normal
-			color #fff
-			margin 1px
-			padding 0.5em 0.2em
-			text-shadow(none)
-		
-		th:first-child
-			border-left none
-		
-		th[colspan="4"]
-			border-bottom 1px solid blanco_normal		
-			
-	tbody
-		tr
-			td
-				padding 0.5em
-				border 1px solid gris_concreto
-		
-			&:nth-child(even)
-				background gris_claro
-				
-			&:hover
-				background gris_nube
-					
-			td[colspan="4"]
-				text-align left
 
 			
 .titular_estilo_mesa
@@ -588,9 +405,6 @@ textarea
 		div
 			figure
 				width 32.5%
-
-	.table
-		font-size 18px
 		
 
 @media only screen and (min-width: 490px)
@@ -660,21 +474,12 @@ textarea
 		display inline-block
 		float none
 		margin 0.4em 0.4em 0 10em
-		overflow hidden
 		transition(all 0.5s ease-in-out)
 		
 	
 	section
 		margin-top 8em
-		
-
-	#activador
-		display inline-block
-		bottom auto
-		left auto
-		right 0.5em
-		top 0.5em
-		
+				
 	
 	#header_nav
 		display inline-block
@@ -685,7 +490,8 @@ textarea
 			
 		li
 			display inline-block
-					
+				
+								
 	
 	#logo
 		display inline-block
@@ -713,20 +519,17 @@ textarea
 	
 	#menu
 		display none
-		
-
-		
+			
 		
 	.header_address
-		//bottom 0.5em
 		color blanco_grisaceo
 		display inline-block
-		font-family 'Fjord'
-		
-		//right 0.5em
-		float right
+		font-family 'DroidSerifRegular'
 		margin-right 0.5em
+		position absolute
+		right 0.5em
 		text-align right
+		top 1em
 		
 		ul
 			padding 0

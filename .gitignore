@@ -1,4 +1,6 @@
 *.log
+*.zip
+*.rar
 .htaccess
 sitemap.xml
 sitemap.xml.gz

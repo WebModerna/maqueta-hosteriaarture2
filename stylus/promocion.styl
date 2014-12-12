@@ -4,17 +4,22 @@
 	
 	.activador
 		left 1em
-		padding 0
 		margin 0
+		padding 0
+		right auto
+		top 1em
+
 		span
 			padding 1em 0.5em
 			overflow hidden
 			margin 0
+
 			h3
 				color blanco
 				font-size 18px
 				padding 0
 				margin 0
+
 				i
 					font-size 40px
 					padding 0
@@ -89,7 +94,6 @@
 		h3
 			color #fff
 			display inline-block
-			font-family "roboto_condensedregular"
 			font-size 0
 			font-weight lighter
 			margin 0
@@ -109,6 +113,7 @@
 	&:hover, &:focus
 		h3
 			font-size 16px
+			
 			i
 				margin-right 9px
 
@@ -116,11 +121,14 @@
 @media only screen and (min-width: 1100px)
 	.activador
 		display inline-block
-		position relative
 		bottom auto
 		left auto
-		right 0.5em
-		top 0.5em
+		right 20%
+		top 2.5em
+		a, span
+			h3
+				padding 6px 10px
+				
 
 	.activador.header
 		display none
